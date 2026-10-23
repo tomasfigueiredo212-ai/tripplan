@@ -260,7 +260,9 @@ composer tests
 
 
 
-
+---
+---
+---
 
 # TripPlan
 
@@ -268,7 +270,83 @@ Projeto desenvolvido em Yii2 Advanced Template.
 
 ---
 
-## Como atualizar o projeto
+# Como entrar no projeto pela primeira vez
+
+## 1. Instalar o Git
+
+Descarregar e instalar o Git:
+
+https://git-scm.com/downloads
+
+Após a instalação, abrir o Git Bash ou o Terminal.
+
+---
+
+## 2. Clonar o projeto
+
+Executar o seguinte comando:
+
+```bash
+git clone https://github.com/tomasfigueiredo212-ai/tripplan.git
+```
+
+Entrar na pasta do projeto:
+
+```bash
+cd tripplan
+```
+
+---
+
+## 3. Instalar dependências
+
+```bash
+composer install
+```
+
+---
+
+## 4. Inicializar o Yii
+
+```bash
+php init
+```
+
+Selecionar:
+
+```text
+Development
+```
+
+---
+
+## 5. Executar as migrations
+
+```bash
+php yii migrate
+```
+
+Responder:
+
+```text
+yes
+```
+
+---
+
+## 6. Configurar a Base de Dados
+
+Editar o ficheiro:
+
+```text
+common/config/main-local.php
+```
+
+Configurar os dados da base de dados local.
+
+---
+
+# Como atualizar o projeto
 
 Antes de começares a trabalhar, atualiza sempre o projeto para obter as alterações mais recentes da equipa.
 
@@ -278,23 +356,21 @@ git pull origin main
 
 ---
 
-## Como guardar alterações no GitHub
+# Como guardar alterações
 
-Depois de terminares uma tarefa, segue estes passos:
-
-### 1. Verificar os ficheiros alterados
+## 1. Verificar alterações
 
 ```bash
 git status
 ```
 
-### 2. Adicionar os ficheiros ao commit
+## 2. Adicionar os ficheiros
 
 ```bash
 git add .
 ```
 
-### 3. Criar um commit
+## 3. Criar um commit
 
 Exemplos:
 
@@ -310,7 +386,7 @@ git commit -m "Criado CRUD de utilizadores"
 git commit -m "Corrigido erro no registo"
 ```
 
-### 4. Enviar para o GitHub
+## 4. Enviar alterações para o GitHub
 
 ```bash
 git push origin main
@@ -318,43 +394,82 @@ git push origin main
 
 ---
 
-## Fluxo de trabalho recomendado
+# Fluxo de trabalho completo
 
-### Atualizar o projeto
+Sempre que fores trabalhar:
+
+## Atualizar projeto
 
 ```bash
 git pull origin main
 ```
 
-### Guardar as alterações
+## Fazer alterações
+
+Programar normalmente.
+
+## Guardar alterações
 
 ```bash
 git add .
+```
 
+```bash
 git commit -m "Descrição da alteração"
+```
 
+```bash
 git push origin main
 ```
 
 ---
 
-## Regras da equipa
+# Resolver erros comuns
 
-- Fazer sempre `git pull origin main` antes de começar a trabalhar.
-- Não alterar código de outros elementos sem avisar.
-- Utilizar mensagens de commit claras e descritivas.
-- Testar as alterações antes de fazer push.
-- Fazer commits frequentes para evitar perda de trabalho.
+## O Git pede para iniciar sessão
+
+Fazer login na conta GitHub.
 
 ---
 
-## Repositório
+## O git pull dá conflito
+
+Avisar a equipa antes de continuar.
+
+Executar:
+
+```bash
+git status
+```
+
+e verificar quais os ficheiros em conflito.
+
+---
+
+## Ver histórico de commits
+
+```bash
+git log --oneline
+```
+
+---
+
+# Repositório
 
 https://github.com/tomasfigueiredo212-ai/tripplan
 
 ---
 
-## Exemplo Completo
+# Equipa
+
+- Tomás Figueiredo
+- Nome do colega 1
+- Nome do colega 2
+- Nome do colega 3
+
+---
+
+# Exemplo Completo
 
 ```bash
 git pull origin main
@@ -365,5 +480,3 @@ git commit -m "Adicionada página de perfil"
 
 git push origin main
 ```
-
-
