@@ -264,5 +264,4 @@ composer tests
 
 
 
-<img width="658" height="2268" alt="image" src="https://github.com/user-attachments/assets/57753cc3-8487-48dd-a798-8256f97fc1c9" />
 
