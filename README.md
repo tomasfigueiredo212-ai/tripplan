@@ -262,6 +262,108 @@ composer tests
 
 
 
+# TripPlan
 
+Projeto desenvolvido em Yii2 Advanced Template.
+
+---
+
+## Como atualizar o projeto
+
+Antes de começares a trabalhar, atualiza sempre o projeto para obter as alterações mais recentes da equipa.
+
+```bash
+git pull origin main
+```
+
+---
+
+## Como guardar alterações no GitHub
+
+Depois de terminares uma tarefa, segue estes passos:
+
+### 1. Verificar os ficheiros alterados
+
+```bash
+git status
+```
+
+### 2. Adicionar os ficheiros ao commit
+
+```bash
+git add .
+```
+
+### 3. Criar um commit
+
+Exemplos:
+
+```bash
+git commit -m "Adicionado sistema de login"
+```
+
+```bash
+git commit -m "Criado CRUD de utilizadores"
+```
+
+```bash
+git commit -m "Corrigido erro no registo"
+```
+
+### 4. Enviar para o GitHub
+
+```bash
+git push origin main
+```
+
+---
+
+## Fluxo de trabalho recomendado
+
+### Atualizar o projeto
+
+```bash
+git pull origin main
+```
+
+### Guardar as alterações
+
+```bash
+git add .
+
+git commit -m "Descrição da alteração"
+
+git push origin main
+```
+
+---
+
+## Regras da equipa
+
+- Fazer sempre `git pull origin main` antes de começar a trabalhar.
+- Não alterar código de outros elementos sem avisar.
+- Utilizar mensagens de commit claras e descritivas.
+- Testar as alterações antes de fazer push.
+- Fazer commits frequentes para evitar perda de trabalho.
+
+---
+
+## Repositório
+
+https://github.com/tomasfigueiredo212-ai/tripplan
+
+---
+
+## Exemplo Completo
+
+```bash
+git pull origin main
+
+git add .
+
+git commit -m "Adicionada página de perfil"
+
+git push origin main
+```
 
 
