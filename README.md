@@ -463,9 +463,9 @@ https://github.com/tomasfigueiredo212-ai/tripplan
 # Equipa
 
 - Tomás Figueiredo
-- Nome do colega 1
-- Nome do colega 2
-- Nome do colega 3
+- Gonçalo Antunes
+- Maldini Silva
+
 
 ---
 
