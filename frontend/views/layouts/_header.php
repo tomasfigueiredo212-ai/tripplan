@@ -66,5 +66,5 @@ $items = [
             'aria-label' => 'Switch to dark mode',
         ],
     ) ?>
-    <?php NavBar::end() ?>
+    <?php NavBar::end() ?>  
 </header>
