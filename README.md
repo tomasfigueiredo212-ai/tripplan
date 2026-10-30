@@ -257,3 +257,226 @@ composer tests
 ## License
 
 [![License](https://img.shields.io/badge/License-BSD--3--Clause-brightgreen.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=555555)](LICENSE.md)
+
+
+
+---
+---
+---
+
+# TripPlan
+
+Projeto desenvolvido em Yii2 Advanced Template.
+
+---
+
+# Como entrar no projeto pela primeira vez
+
+## 1. Instalar o Git
+
+Descarregar e instalar o Git:
+
+https://git-scm.com/downloads
+
+Após a instalação, abrir o Git Bash ou o Terminal.
+
+---
+
+## 2. Clonar o projeto
+
+Executar o seguinte comando:
+
+```bash
+git clone https://github.com/tomasfigueiredo212-ai/tripplan.git
+```
+
+Entrar na pasta do projeto:
+
+```bash
+cd tripplan
+```
+
+---
+
+## 3. Instalar dependências
+
+```bash
+composer install
+```
+
+---
+
+## 4. Inicializar o Yii
+
+```bash
+php init
+```
+
+Selecionar:
+
+```text
+Development
+```
+
+---
+
+## 5. Executar as migrations
+
+```bash
+php yii migrate
+```
+
+Responder:
+
+```text
+yes
+```
+
+---
+
+## 6. Configurar a Base de Dados
+
+Editar o ficheiro:
+
+```text
+common/config/main-local.php
+```
+
+Configurar os dados da base de dados local.
+
+---
+
+# Como atualizar o projeto
+
+Antes de começares a trabalhar, atualiza sempre o projeto para obter as alterações mais recentes da equipa.
+
+```bash
+git pull origin main
+```
+
+---
+
+# Como guardar alterações
+
+## 1. Verificar alterações
+
+```bash
+git status
+```
+
+## 2. Adicionar os ficheiros
+
+```bash
+git add .
+```
+
+## 3. Criar um commit
+
+Exemplos:
+
+```bash
+git commit -m "Adicionado sistema de login"
+```
+
+```bash
+git commit -m "Criado CRUD de utilizadores"
+```
+
+```bash
+git commit -m "Corrigido erro no registo"
+```
+
+## 4. Enviar alterações para o GitHub
+
+```bash
+git push origin main
+```
+
+---
+
+# Fluxo de trabalho completo
+
+Sempre que fores trabalhar:
+
+## Atualizar projeto
+
+```bash
+git pull origin main
+```
+
+## Fazer alterações
+
+Programar normalmente.
+
+## Guardar alterações
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "Descrição da alteração"
+```
+
+```bash
+git push origin main
+```
+
+---
+
+# Resolver erros comuns
+
+## O Git pede para iniciar sessão
+
+Fazer login na conta GitHub.
+
+---
+
+## O git pull dá conflito
+
+Avisar a equipa antes de continuar.
+
+Executar:
+
+```bash
+git status
+```
+
+e verificar quais os ficheiros em conflito.
+
+---
+
+## Ver histórico de commits
+
+```bash
+git log --oneline
+```
+
+---
+
+# Repositório
+
+https://github.com/tomasfigueiredo212-ai/tripplan
+
+---
+
+# Equipa
+
+- Tomás Figueiredo
+- Gonçalo Antunes
+- Maldini Silva
+
+
+---
+
+# Exemplo Completo
+
+```bash
+git pull origin main
+
+git add .
+
+git commit -m "Adicionada página de perfil"
+
+git push origin main
+```
