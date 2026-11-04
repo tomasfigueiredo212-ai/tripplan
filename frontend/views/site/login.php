@@ -9,7 +9,7 @@ declare(strict_types=1);
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 
-$this->title = 'Login to your account';
+$this->title = 'Faz login para a tua conta';
 $this->params['breadcrumbs'][] = $this->title;
 $this->params['meta_description'] = 'Log in to access your Yii2 application account.';
 $this->params['meta_keywords'] = 'yii, yii2, login, sign in, authentication';
@@ -27,21 +27,18 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                 <div class="d-flex flex-column justify-content-between p-4 p-lg-5 w-100">
                     <div>
                         <?= Html::img(
-                            Yii::getAlias('@web/images/yii3_full_white_for_dark.svg'),
+                            Yii::getAlias('@web/images/logoTriplan1.png'),
                             [
                                 'alt' => 'Yii Framework',
                                 'class' => 'mb-4',
-                                'height' => 40,
+                                'height' => 80,
                             ],
                         ) ?>
                     </div>
                     <div>
                         <h2 class="fw-bold mb-3 login-brand-title">
-                            Welcome<br>Back
+                            Bem vindo<br>de volta
                         </h2>
-                        <p class="opacity-75 mb-0 login-brand-text">
-                            Log in to access your Yii2 application and manage your account.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -62,7 +59,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             ) ?>
                         </div>
                         <h1 class="h3 fw-bold mb-1"><?= Html::encode($this->title) ?></h1>
-                        <p class="text-body-secondary small">Enter your credentials to continue</p>
+                        <p class="text-body-secondary small">Coloque as suas credenciais para continuar</p>
                     </div>
 
                     <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
@@ -73,10 +70,10 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             'template' => sprintf($htmlIcon, '&#128100;'),
                             'inputOptions' => [
                                 'class' => 'form-control',
-                                'placeholder' => 'username',
+                                'placeholder' => 'utilizador',
                                 'autofocus' => true,
                             ],
-                        ])->textInput()->label('Your Username', $labelOptions) ?>
+                        ])->textInput()->label('Utilizador', $labelOptions) ?>
                     </div>
 
                     <div class="mb-3">
@@ -87,7 +84,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                                 'class' => 'form-control',
                                 'placeholder' => 'Password',
                             ],
-                        ])->passwordInput()->label('Your Password', $labelOptions) ?>
+                        ])->passwordInput()->label('Password', $labelOptions) ?>
                     </div>
 
                     <div class="mb-4">
