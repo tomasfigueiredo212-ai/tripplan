@@ -292,11 +292,7 @@ $this->registerJsFile('@web/js/main.js');
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-box">
                     <figure><img src="images/blog-image0.jpg" alt="#"/>
-<<<<<<< HEAD
                         
-=======
-                        <span>4 Feb 2019</span>
->>>>>>> a7121e8f104722e51e0219b42056ae46d19a1724
                     </figure>
                     <div class="travel">
                         <span>Post  By :  Travel  Agency</span>
@@ -310,11 +306,7 @@ $this->registerJsFile('@web/js/main.js');
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-box">
                     <figure><img src="images/blog-image.jpg" alt="#"/>
-<<<<<<< HEAD
                         
-=======
-                        <span>10 Feb 2019</span>
->>>>>>> a7121e8f104722e51e0219b42056ae46d19a1724
                     </figure>
                     <div class="travel">
                         <span>Post  By :  Travel  Agency</span>
