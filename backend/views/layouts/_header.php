@@ -32,9 +32,15 @@ $items = [
 <header id="header">
     <?php NavBar::begin(
         [
-            'brandLabel' => Yii::$app->name,
+            'brandLabel' => Html::img(
+                '@web/images/logoTriplan1.png',
+                [
+                    'alt' => 'TripPlan',
+                    'style' => 'height:100px;'
+                ]
+            ),
             'brandUrl' => Yii::$app->homeUrl,
-            'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
+            'options' => ['class' => 'navbar navbar-expand-lg custom-navbar']
         ],
     ) ?>
     <?= Nav::widget(

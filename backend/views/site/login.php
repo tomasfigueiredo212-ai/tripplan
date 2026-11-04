@@ -23,20 +23,20 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
             <div class="d-flex flex-column justify-content-between p-4 p-lg-5 w-100">
                 <div>
                     <?= Html::img(
-                        Yii::getAlias('@web/images/yii3_full_white_for_dark.svg'),
+                        Yii::getAlias('@web/images/logoTriplan1.png'),
                         [
-                            'alt' => 'Yii Framework',
+                            'alt' => 'TripPlan',
                             'class' => 'mb-4',
-                            'height' => 40,
+                            'height' => 80,
                         ],
                     ) ?>
                 </div>
                 <div>
                     <h2 class="fw-bold mb-3 login-brand-title">
-                        Backend<br>Administration
+                        TripPlan<br>Administration
                     </h2>
                     <p class="opacity-75 mb-0 login-brand-text">
-                        Manage your Yii2 application with the advanced admin dashboard.
+                        Manage destinations, bookings and users from the TripPlan administration panel.
                     </p>
                 </div>
             </div>
@@ -49,9 +49,9 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     <!-- Mobile-only logo -->
                     <div class="d-md-none mb-3">
                         <?= Html::img(
-                            Yii::getAlias('@web/images/yii3_full_black_for_light.svg'),
+                            Yii::getAlias('@web/images/logoTriplan1.png'),
                             [
-                                'alt' => 'Yii Framework',
+                                'alt' => 'TripPlan',
                                 'class' => 'login-mobile-logo',
                                 'height' => 36,
                             ],
