@@ -39,7 +39,7 @@ $this->registerJsFile('@web/js/main.js');
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                     <div class="full">
                         <div class="center-desk">
-                            <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                            <div class="logo"> <a href="index.html"><img src="images/logoTriplan1.png" alt="#"></a> </div>
                         </div>
                     </div>
                 </div>
@@ -292,7 +292,7 @@ $this->registerJsFile('@web/js/main.js');
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-box">
                     <figure><img src="images/blog-image0.jpg" alt="#"/>
-                        <span>4 Feb 2019</span>
+                        
                     </figure>
                     <div class="travel">
                         <span>Post  By :  Travel  Agency</span>
@@ -306,7 +306,7 @@ $this->registerJsFile('@web/js/main.js');
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="blog-box">
                     <figure><img src="images/blog-image.jpg" alt="#"/>
-                        <span>10 Feb 2019</span>
+                        
                     </figure>
                     <div class="travel">
                         <span>Post  By :  Travel  Agency</span>
