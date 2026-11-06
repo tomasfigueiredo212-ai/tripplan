@@ -25,6 +25,10 @@ return [
           ],
     ],
     'components' => [
+        
+        'authManager' => [
+        'class' => yii\rbac\DbManager::class,
+        ],
         'log' => [
             'targets' => [
                 [
