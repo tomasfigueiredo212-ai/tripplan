@@ -14,15 +14,15 @@ $items = [
         'url' => ['/site/index'],
     ],
     [
-        'label' => 'About',
+        'label' => 'Sobre',
         'url' => ['/site/about'],
     ],
     [
-        'label' => 'Contact',
+        'label' => 'Contactos',
         'url' => ['/site/contact'],
     ],
     [
-        'label' => 'Signup',
+        'label' => 'Registo',
         'url' => ['/site/signup'],
         'visible' => Yii::$app->user->isGuest,
     ],
@@ -41,7 +41,15 @@ $items = [
         'visible' => !Yii::$app->user->isGuest,
     ],
     [
-        'label' => 'Travel',
+        'label' => 'Minhas Viagens',
+        
+    ],
+    [
+        'label' => 'Destinos',
+        
+    ],
+    [
+        'label' => 'Perfil',
         
     ],
 ];
