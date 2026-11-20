@@ -32,15 +32,6 @@ $items = [
         'visible' => Yii::$app->user->isGuest,
     ],
     [
-        'label' => 'Logout (' . Html::encode(Yii::$app->user->identity?->username) . ')',
-        'url' => ['/site/logout'],
-        'linkOptions' => [
-            'data-method' => 'post',
-            'class' => 'logout',
-        ],
-        'visible' => !Yii::$app->user->isGuest,
-    ],
-    [
         'label' => 'Minhas Viagens',
         
     ],
@@ -52,6 +43,15 @@ $items = [
         'label' => 'Perfil',
         
     ],
+    [
+        'label' => 'Logout (' . Html::encode(Yii::$app->user->identity?->username) . ')',
+        'url' => ['/site/logout'],
+        'linkOptions' => [
+            'data-method' => 'post',
+            'class' => 'logout',
+        ],
+        'visible' => !Yii::$app->user->isGuest,
+    ]
 ];
 
 ?>

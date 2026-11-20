@@ -127,7 +127,7 @@ class UserController extends Controller
     {
         $model = $this->findModel($id);
 
-        $model->ativo = 0;
+        $model->status = User::STATUS_DELETED;
 
         $model->save(false);
 

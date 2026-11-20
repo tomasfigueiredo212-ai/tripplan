@@ -6,19 +6,24 @@ $this->registerCssFile('@web/css/style.css');
 $this->registerJsFile('@web/js/main.js');
 
 ?>
+<?php if (Yii::$app->request->get('erro') === 'sem_permissao'): ?>
+<div class="alert alert-warning">
+    Não tem permissões para aceder ao Backoffice.
+</div>
+<?php endif; ?>
 
 
 
 
-<!-- loader  -->
+<!-- carregamento -->
 <div class="loader_bg">
     <div class="loader"><img src="images/loading.gif" alt="#" /></div>
 </div>
-<!-- end loader -->
-<!-- header -->
+<!-- fim do carregamento -->
+<!-- cabeçalho -->
 <header>
-    <!-- header inner -->
-    <div class="header">
+    <!-- conteúdo interno do cabeçalho -->
+    <!-- <div class="header">
         <div class="header_white_section">
             <div class="container-fluid">
                 <div class="row">
@@ -48,11 +53,11 @@ $this->registerJsFile('@web/js/main.js');
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li class="active"> <a href="#">Home</a> </li>
-                                    <li> <a href="#about">About</a> </li>
-                                    <li><a href="#travel">Travel</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#contact">Contact Us</a></li>
+                                    <li class="active"> <a href="#">Início</a> </li>
+                                    <li> <a href="#about">Sobre</a> </li>
+                                    <li><a href="#travel">Viagens</a></li>
+                                    <li><a href="#blog">Blogue</a></li>
+                                    <li><a href="#contact">Contacte-nos</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -60,56 +65,56 @@ $this->registerJsFile('@web/js/main.js');
                 </div>
             </div>
         </div>
-    </div>
-    <!-- end header inner -->
+    </div> -->
+    <!-- fim do conteúdo interno do cabeçalho -->
 </header>
-<!-- end header -->
+<!-- fim do cabeçalho -->
 <section >
     <div class="banner-main">
         <img src="images/banner.jpg" alt="#"/>
         <div class="container">
             <div class="text-bg">
-                <h1>America<br><strong class="white">Amazing Tour</strong></h1>
-                <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
+                <h1>Viaje<br><strong class="white">Com TripPlan</strong></h1>
+                <div class="button_section"> <a class="main_bt" href="#">Ler mais</a>  </div>
                 <div class="container">
                     <form class="main-form">
-                        <h3>Find Your Tour</h3>
+                        <h3>Encontre a sua viagem</h3>
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Keywords</label>
+                                        <label >Palavras-chave</label>
                                         <input class="form-control" placeholder="" type="text" name="">
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Category</label>
+                                        <label >Categoria</label>
                                         <select class="form-control" name="Any">
-                                            <option>Any</option>
+                                            <option>Qualquer</option>
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
                                         </select>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Min Price</label>
+                                        <label >Preço mínimo</label>
                                         <input class="form-control" placeholder="00.0" type="text" name="00.0">
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Duration</label>
-                                        <input class="form-control" placeholder="Any" type="text" name="Any">
+                                        <label >Duração</label>
+                                        <input class="form-control" placeholder="Qualquer" type="text" name="Any">
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Date</label>
-                                        <input class="form-control" placeholder="Any" type="date" name="Any">
+                                        <label >Data</label>
+                                        <input class="form-control" placeholder="Qualquer" type="date" name="Any">
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <label >Max Price</label>
+                                        <label >Preço máximo</label>
                                         <input class="form-control" placeholder="00.0" type="text" name="00.0">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                                <a href="#">search</a>
+                                <a href="#">Pesquisar</a>
                             </div>
                         </div>
                     </form>
@@ -118,14 +123,14 @@ $this->registerJsFile('@web/js/main.js');
         </div>
     </div>
 </section>
-<!-- about -->
+<!-- sobre -->
 <div id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
                 <div class="titlepage">
-                    <h2>About  our travel agency</h2>
-                    <span> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                    <h2>Sobre a nossa agência de viagens</h2>
+                    <span> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal.</span>
                 </div>
             </div>
         </div>
@@ -135,24 +140,24 @@ $this->registerJsFile('@web/js/main.js');
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="about-box">
-                        <p> <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure thereThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</span></p>
+                        <p> <span>Existem muitas versões de textos de preenchimento disponíveis, mas a maioria foi alterada de alguma forma, com humor ou palavras aleatórias que não parecem credíveis. Se utilizar um texto deste tipo, certifique-se de que o conteúdo é adequado.Existem muitas versões de textos de preenchimento disponíveis, mas a maioria foi alterada de alguma forma, com humor ou palavras aleatórias que não parecem credíveis. Se utilizar um texto deste tipo, certifique-se de que o conteúdo é adequado.</span></p>
 
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#">Read More</a>
+        <a href="#">Ler mais</a>
     </div>
 </div>
-<!-- end about -->
-<!-- traveling -->
+<!-- fim da secção sobre -->
+<!-- viagens -->
 <div id="travel" class="traveling">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
                 <div class="titlepage">
-                    <h2>Select Offers For Traveling</h2>
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                    <h2>Escolha ofertas de viagem</h2>
+                    <span> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal.</span>
                 </div>
             </div>
         </div>
@@ -160,55 +165,55 @@ $this->registerJsFile('@web/js/main.js');
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                 <div class="traveling-box">
                     <i><img src="icon/travel-icon.png" alt="icon"/></i>
-                    <h3>Different Countrys</h3>
-                    <p> going to use a passage of Lorem Ipsum, you need to be </p>
+                    <h3>Diferentes países</h3>
+                    <p> texto de preenchimento que pode utilizar para apresentar o conteúdo da sua viagem </p>
                     <div class="read-more">
-                        <a  href="#">Read More</a>
+                        <a  href="#">Ler mais</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                 <div class="traveling-box">
                     <i><img src="icon/travel-icon2.png" alt="icon"/></i>
-                    <h3>Mountains Tours</h3>
-                    <p> going to use a passage of Lorem Ipsum, you need to be </p>
+                    <h3>Passeios pelas montanhas</h3>
+                    <p> texto de preenchimento que pode utilizar para apresentar o conteúdo da sua viagem </p>
                     <div class="read-more">
-                        <a  href="#">Read More</a>
+                        <a  href="#">Ler mais</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                 <div class="traveling-box">
                     <i><img src="icon/travel-icon3.png" alt="icon"/></i>
-                    <h3>Bus Tours</h3>
-                    <p> going to use a passage of Lorem Ipsum, you need to be </p>
+                    <h3>Passeios de autocarro</h3>
+                    <p> texto de preenchimento que pode utilizar para apresentar o conteúdo da sua viagem </p>
                     <div class="read-more">
-                        <a  href="#">Read More</a>
+                        <a  href="#">Ler mais</a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                 <div class="traveling-box">
                     <i><img src="icon/travel-icon4.png" alt="icon"/></i>
-                    <h3>Summer Rest</h3>
-                    <p> going to use a passage of Lorem Ipsum, you need to be </p>
+                    <h3>Férias de verão</h3>
+                    <p> texto de preenchimento que pode utilizar para apresentar o conteúdo da sua viagem </p>
                     <div class="read-more">
-                        <a  href="#">Read More</a>
+                        <a  href="#">Ler mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- end traveling -->
-<!--London -->
+<!-- fim da secção de viagens -->
+<!-- Londres -->
 <div class="London">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Weekend in New York, London</h2>
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                    <h2>Fim de semana em Nova Iorque e Londres</h2>
+                    <span> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal.</span>
                 </div>
             </div>
         </div>
@@ -219,15 +224,15 @@ $this->registerJsFile('@web/js/main.js');
         </div>
     </div>
 </div>
-<!-- end London -->
-<!--Tours -->
+<!-- fim da secção Londres -->
+<!-- passeios -->
 <div class="Tours">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>The Best Tours</h2>
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                    <h2>Os melhores passeios</h2>
+                    <span> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal.</span>
                 </div>
             </div>
         </div>
@@ -237,23 +242,23 @@ $this->registerJsFile('@web/js/main.js');
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <img class="img-responsive" src="images/1.jpg" alt="#" />
-                            <h3>Holiday Tour</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in soe suffk even slightly believable. If y be sure there</p>
+                            <h3>Viagem de férias</h3>
+                            <p>Existem várias versões de textos de preenchimento, mas este conteúdo deve ser substituído pela descrição real do passeio.</p>
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="images/2.jpg" alt="#" />
-                            <h3>New York</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in soe suffk even slightly believable. If y be sure there</p>
+                            <h3>Nova Iorque</h3>
+                            <p>Existem várias versões de textos de preenchimento, mas este conteúdo deve ser substituído pela descrição real do passeio.</p>
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="images/3.jpg" alt="#" />
-                            <h3>London</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in soe suffk even slightly believable. If y be sure there</p>
+                            <h3>Londres</h3>
+                            <p>Existem várias versões de textos de preenchimento, mas este conteúdo deve ser substituído pela descrição real do passeio.</p>
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="images/2.jpg" alt="#" />
-                            <h3>Holiday Tour</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in soe suffk even slightly believable. If y be sure there</p>
+                            <h3>Viagem de férias</h3>
+                            <p>Existem várias versões de textos de preenchimento, mas este conteúdo deve ser substituído pela descrição real do passeio.</p>
                         </div>
                     </div>
                 </div>
@@ -261,30 +266,30 @@ $this->registerJsFile('@web/js/main.js');
         </section>
     </div>
 </div>
-<!-- end Tours -->
-<!-- Amazing -->
+<!-- fim da secção de passeios -->
+<!-- incrível -->
 <div class="amazing">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="amazing-box">
-                    <h2>Amazing London Tour</h2>
-                    <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there</span>
-                    <a href="#">Book Now</a><a href="#">Get More</a>
+                    <h2>Incrível passeio por Londres</h2>
+                    <span>Existem muitas versões de textos de preenchimento disponíveis, mas a maioria foi alterada de alguma forma, com humor ou palavras aleatórias que não parecem credíveis. Se utilizar um texto deste tipo, certifique-se de que o conteúdo é adequado.</span>
+                    <a href="#">Reserve agora</a><a href="#">Saber mais</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- end Amazing -->
-<!-- our blog -->
+<!-- fim da secção incrível -->
+<!-- o nosso blogue -->
 <div id="blog" class="blog">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="titlepage">
-                    <h2>Our Blog</h2>
-                    <span>Lorem Ipsum is that it has a more-or-less normal distribution of letters,</span>
+                    <h2>O nosso blogue</h2>
+                    <span>O texto de preenchimento apresenta uma distribuição de letras semelhante à de um texto normal.</span>
                 </div>
             </div>
         </div>
@@ -295,12 +300,12 @@ $this->registerJsFile('@web/js/main.js');
                         
                     </figure>
                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span>
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
+                        <span>Publicado por: Agência de viagens</span>
+                        <p><strong class="Comment"> 06 </strong> Comentários</p>
+                        <p><strong class="like">05 </strong>Gostos</p>
                     </div>
-                    <h3>London Amazing Tour</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                    <h3>Incrível passeio por Londres</h3>
+                    <p> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal. as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -309,19 +314,19 @@ $this->registerJsFile('@web/js/main.js');
                         
                     </figure>
                     <div class="travel">
-                        <span>Post  By :  Travel  Agency</span>
-                        <p><strong class="Comment"> 06 </strong>  Comment</p>
-                        <p><strong class="like">05 </strong>Like</p>
+                        <span>Publicado por: Agência de viagens</span>
+                        <p><strong class="Comment"> 06 </strong> Comentários</p>
+                        <p><strong class="like">05 </strong>Gostos</p>
                     </div>
-                    <h3>London Amazing Tour</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
+                    <h3>Incrível passeio por Londres</h3>
+                    <p> É um facto conhecido que um leitor se distrai com o conteúdo legível de uma página ao observar a sua apresentação. O objetivo de utilizar texto de preenchimento é criar uma distribuição de letras semelhante à de um texto normal. as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- end our blog -->
-<!-- footer -->
+<!-- fim do nosso blogue -->
+<!-- rodapé -->
 <footer>
     <div id="contact" class="footer">
         <div class="container">
@@ -336,7 +341,7 @@ $this->registerJsFile('@web/js/main.js');
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="Follow">
-                        <h3>CONTACT US</h3>
+                        <h3>CONTACTE-NOS</h3>
                         <span>123 Second Street Fifth <br>Avenue,<br>
                         Manhattan, New York<br>
                         +987 654 3210</span>
@@ -344,53 +349,53 @@ $this->registerJsFile('@web/js/main.js');
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="Follow">
-                        <h3>ADDITIONAL LINKS</h3>
+                        <h3>LIGAÇÕES ADICIONAIS</h3>
                         <ul class="link">
-                            <li> <a href="#">About us</a></li>
-                            <li> <a href="#">Terms and conditions</a></li>
-                            <li> <a href="#"> Privacy policy</a></li>
-                            <li> <a href="#">News</a></li>
-                            <li> <a href="#"> Contact us</a></li>
+                            <li> <a href="#">Sobre nós</a></li>
+                            <li> <a href="#">Termos e condições</a></li>
+                            <li> <a href="#"> Política de privacidade</a></li>
+                            <li> <a href="#">Notícias</a></li>
+                            <li> <a href="#"> Contacte-nos</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="Follow">
-                        <h3> Contact</h3>
+                        <h3> Contacto</h3>
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <input class="Newsletter" placeholder="Name" type="text">
+                                <input class="Newsletter" placeholder="Nome" type="text">
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                <input class="Newsletter" placeholder="Email" type="text">
+                                <input class="Newsletter" placeholder="E-mail" type="text">
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <textarea class="textarea" placeholder="comment" type="text">Comment</textarea>
+                                <textarea class="textarea" placeholder="Comentário" type="text">Comentário</textarea>
                             </div>
                         </div>
-                        <button class="Subscribe">Submit</button>
+                        <button class="Subscribe">Enviar</button>
                     </div>
                 </div>
             </div>
             <div class="copyright">
                 <div class="container">
-                    <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
+                    <p>Direitos de autor © 2019. Todos os direitos reservados por <a href="https://html.design/">Modelos HTML gratuitos</a></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- end footer -->
-<!-- Javascript files-->
+<!-- fim do rodapé -->
+<!-- ficheiros JavaScript -->
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/plugin.js"></script>
-<!-- sidebar -->
+<!-- barra lateral -->
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/custom.js"></script>
-<!-- javascript -->
+<!-- JavaScript -->
 <script src="js/owl.carousel.js"></script>
 <script>
     $(document).ready(function() {
